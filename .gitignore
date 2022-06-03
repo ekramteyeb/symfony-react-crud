@@ -1,7 +1,8 @@
 
 ###> symfony/framework-bundle ###
 /.env
-/text.js
+/text.js/
+text.js/
 /.env.test
 /.env.local
 /.env.local.php
