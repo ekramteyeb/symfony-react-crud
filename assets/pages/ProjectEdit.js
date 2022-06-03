@@ -5,12 +5,19 @@ import Swal from 'sweetalert2'
 import axios from 'axios';
   
 function ProjectEdit() {
+    
     const [id, setId] = useState(useParams().id)
     const [name, setName] = useState('');
     const [description, setDescription] = useState('')
     const [isSaving, setIsSaving] = useState(false)
-  
-      
+
+    /*  React -> php -> mysql
+        
+        FE->BE ->DB
+        FE<-BE <-DB
+     */
+
+
     useEffect(() => {
         axios.get(`/api/project/${id}`)
         .then(function (response) {
@@ -28,8 +35,7 @@ function ProjectEdit() {
         })
           
     }, [])
-  
-  
+    
     const handleSave = () => {
         setIsSaving(true);
         axios.patch(`/api/project/${id}`, {
@@ -60,7 +66,7 @@ function ProjectEdit() {
     return (
         <Layout>
             <div className="container">
-                <h2 className="text-center mt-5 mb-3">Edit Project try this</h2>
+                <h2 className="text-center mt-5 mb-3">Edit Project</h2>
                 <div className="card">
                     <div className="card-header">
                         <Link 

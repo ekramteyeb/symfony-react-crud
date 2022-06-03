@@ -5,6 +5,7 @@ import Swal from 'sweetalert2'
 import axios from 'axios';
  
 function ProjectList() {
+    //state 
     const  [projectList, setProjectList] = useState([])
   
     useEffect(() => {
@@ -57,7 +58,7 @@ function ProjectList() {
     return (
         <Layout>
            <div className="container">
-            <h2 className="text-center mt-5 mb-3">Symfony Project Manager</h2>
+            <h2 className="text-center mt-5 mb-3">Symfony Project Manager : 23</h2>
                 <div className="card">
                     <div className="card-header">
                         <Link 
