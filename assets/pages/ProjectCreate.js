@@ -16,7 +16,6 @@ function ProjectCreate() {
         formData.append("description", description)
         axios.post('/api/project', formData)
           .then(function (response) {
-              console.log(response, 'response from create project')
             Swal.fire({
                 icon: 'success',
                 title: 'Project saved successfully!',
@@ -41,7 +40,7 @@ function ProjectCreate() {
     return (
         <Layout>
             <div className="container">
-                <h2 className="text-center mt-5 mb-3">Create New Project : Lets do it agin</h2>
+                <h2 className="text-center mt-5 mb-3 p-4 bg-info">Create New Project</h2>
                 <div className="card">
                     <div className="card-header">
                         <Link 
