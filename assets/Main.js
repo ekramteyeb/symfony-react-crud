@@ -1,11 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+//import ReactDOM from 'react-dom';
+import { createRoot }from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectList from "./pages/ProjectList"
 import ProjectCreate from "./pages/ProjectCreate"
 import ProjectEdit from "./pages/ProjectEdit"
 import ProjectShow from "./pages/ProjectShow"
-   
+
+// converted react 17 to react 18
+const container = document.getElementById('app')
+const root = createRoot(container)
+
 function Main() {
     return (
         <Router>
@@ -21,6 +26,6 @@ function Main() {
    
 export default Main;
    
-if (document.getElementById('app')) {
-    ReactDOM.render(<Main />, document.getElementById('app'));
+if (container) {
+    root.render(<Main />);
 }
