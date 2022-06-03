@@ -36,7 +36,7 @@ console.log(microvers()) */
     }
     return sockPair
 }
-const arr = [10, 20 ,30, 20, 10, 10, 10, 30, 50, 50, 60,60,20]
+const arr = [10, 20 ,30, 30, 20, 10, 10, 10, 30, 50, 50, 60,60,20]
 console.log(sockMerchant(9, arr)) 
 /* function solveMeFirst(a, b){
     if((a <= 1 || a >= 1000) || (b <= 1 || b >= 1000)){

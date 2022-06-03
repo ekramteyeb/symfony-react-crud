@@ -1,7 +1,7 @@
 
 ###> symfony/framework-bundle ###
 /.env
-
+/text.js
 /.env.test
 /.env.local
 /.env.local.php
@@ -28,4 +28,3 @@
 npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
-/text.js
